@@ -1,9 +1,9 @@
-import cross_validation
-import data_augmentation
-import datasets
-import metrics
-import models
-import pipelines
-import preprocessing
-import regularizers
-import save_load
+from . import cross_validation
+from . import data_augmentation
+from . import datasets
+from . import metrics
+from . import models
+from . import pipelines
+from . import preprocessing
+from . import regularizers
+from . import save_load

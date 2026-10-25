@@ -1,0 +1,47 @@
+﻿_target_: CMC_utils.datasets.ClassificationDataset
+_convert_: all
+
+name: ckd
+db_type: tabular
+
+classes: ["ckd", "notckd"]
+label_type: multiclass
+task: classification
+
+path: ${data_path}/tabular/classification/ckd/ckd.csv
+
+columns:
+  age: int
+  bp: int
+  sg: category
+  al: category
+  su: category
+  rbc: category
+  pc: category
+  pcc: category
+  ba: category
+  bgr: int
+  bu: int
+  sc: int
+  sod: int
+  pot: int
+  hemo: int
+  pcv: int
+  wbcc: int
+  rbcc: int
+  htn: category
+  dm: category
+  cad: category
+  appet: category
+  pe: category
+  ane: category
+  class: target
+
+pandas_load_kwargs:
+  header: 0
+  na_values: ['?']
+  skipinitialspace: true
+
+dataset_class:
+  _target_: CMC_utils.datasets.SupervisedTabularDatasetTorch
+  _convert_: all

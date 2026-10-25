@@ -7,3 +7,12 @@
 /bash
 /docs
 requirements_bkp.txt
+/.venv/
+venv/
+.env
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
